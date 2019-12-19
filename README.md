@@ -1,1 +1,1 @@
-# learning-PyQt5
+# learning-oop,pickle
