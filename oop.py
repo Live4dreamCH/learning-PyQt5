@@ -5,13 +5,15 @@ class Point:
     """这是个平面点类，有两个坐标：x和y"""
 
     count = 0
-    "有几个点"
+    "一共有几个点"
 
     def __init__(self, x=0, y=0):
         """新建点，并默认初始化x，y为0,0"""
         self.x = x
         self.y = y
         Point.count += 1
+        self.count = Point.count
+        '当前点是第几个生成的'
 
     def move(self, x, y):
         """移动点坐标"""
@@ -27,7 +29,8 @@ class Point:
         return sqrt((self.x - point2.x) ** 2 + (self.y - point2.y) ** 2)
 
     def print(self):
-        print(Point.count)
+        print('共有', Point.count, '个：')
+        print('第', self.count, '个', end=' ')
         print((self.x, self.y))
 
 
