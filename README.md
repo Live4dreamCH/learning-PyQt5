@@ -1,1 +1,2 @@
-# learning-PyQt5
+# learning-Python
+学无止境
